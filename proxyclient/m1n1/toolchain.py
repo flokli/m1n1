@@ -124,7 +124,7 @@ class Toolchain:
         if u.sysname == "OpenBSD":
             default_arch = "aarch64-none-elf-"
         elif u.sysname in ["Darwin", "Linux"] and u.machine != "aarch64":
-            default_arch = "aarch64-linux-gnu-"
+            default_arch = "aarch64-unknown-linux-gnu-"
         else:
             default_arch = ""
 
